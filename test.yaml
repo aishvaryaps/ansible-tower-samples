@@ -1,9 +1,9 @@
----
- - hosts: all
-   become: true
-
-   tasks:
-   - name: start httpd service
-     systemd:
+- name: Httpd Sample
+  hosts: all
+  tasks:
+    - name: Httpd start service
+      debug:
+        msg: "Hello World!"
+	  systemd:
        name: httpd.service
        state: started
