@@ -1,11 +1,11 @@
-  ---
-  hosts: all
-  become: true
+---		
+ - hosts: all
+   become: true
   
-  tasks:
-  - name: Httpd start service
-    systemd:
-      name: httpd.service
-      state: started
-    debug:
-      msg: hi
+   tasks:
+   - name: start httpd service
+     systemd:
+       name: httpd.service
+       state: started
+     debug:
+       msg: hi
