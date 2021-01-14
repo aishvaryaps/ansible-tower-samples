@@ -1,7 +1,7 @@
 - name: Httpd Sample
   hosts: all
   tasks:
-  - name: Httpd start service
+  - name: start httpd service
     systemd:
       name: httpd.service
       state: started
