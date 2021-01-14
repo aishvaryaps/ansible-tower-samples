@@ -1,5 +1,5 @@
 ---
- - hosts: hostis
+ - hosts: all
    become: true
 
    tasks:
